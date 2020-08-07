@@ -101,17 +101,15 @@ workflows:
   dev_stage_pre-prod:
     jobs:
       - build-dev:
-          filters:
-            branches:
-              only: /^feature.*$/
+          requires:
+             - build-test
       - build-qa:
           filters:
             branches:
               only: master
       - build-test:
-           filters:
-            branches: 
-              ignore: 
-                - master        
+          filters:
+            branches:
+              only: /^feature.*$/  
 
 
