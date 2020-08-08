@@ -14,6 +14,9 @@ jobs:
                    DATENOW=`date +%d/%m/%Y-%H:%M:%S`
                    echo $DATENOW
       - run:
+          name: Install dependencies
+          command: yarn install             
+      - run:
           name: run a semantic version
           command: |
             OLDER_VERSION=$(node -p "require('./package.json').version")
