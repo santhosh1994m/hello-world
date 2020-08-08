@@ -4,10 +4,14 @@ version: 2.1
 jobs:
   build-qa:
     docker:
-      - image: "circleci/node:latest"
+      - image: "circleci/openjdk:11-jdk"
     working_directory: ~/hello-world
     steps:
       - checkout
+      - run: 
+          name: install node and npm
+          command: |
+                 sudo apt install nodejs
       - run:
           name: Install dependencies
           command: yarn install
