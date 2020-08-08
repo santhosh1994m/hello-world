@@ -8,10 +8,10 @@ jobs:
     working_directory: ~/hello-world
     steps:
       - checkout
-      - run: 
-          name: install node and npm
-          command: |
-                 sudo apt-get install nodejs
+      - node/install:
+          install-yarn: true
+          node-version: latest
+      - run: node --version
       - run:
           name: Install dependencies
           command: yarn install
