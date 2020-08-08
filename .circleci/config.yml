@@ -12,9 +12,6 @@ jobs:
           name: Install dependencies
           command: yarn install
       - run:
-          name: build common package for backend
-          command: yarn build
-      - run:
           name: run a semantic version
           command: |
             OLDER_VERSION=$(node -p "require('./package.json').version")
