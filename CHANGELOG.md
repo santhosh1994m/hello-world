@@ -1,3 +1,12 @@
+## [0.1.60](https://github.com/santhosh1994m/hello-world/compare/v0.1.59...v0.1.60) (2020-08-08)
+
+
+### Bug Fixes
+
+* install the node and npm ([bb34f7d](https://github.com/santhosh1994m/hello-world/commit/bb34f7d77ee72f5cf8f7696d11d6118c8c9eb203))
+* update the file ([b915793](https://github.com/santhosh1994m/hello-world/commit/b9157939a33a5ee2c6080fef416e9fdfab7882dc))
+* update the filee ([55ab0d1](https://github.com/santhosh1994m/hello-world/commit/55ab0d1b2cad4758006cd66b39a5ef3f7efbc915))
+
 ## [0.1.59](https://github.com/santhosh1994m/hello-world/compare/v0.1.58...v0.1.59) (2020-08-08)
 
 
