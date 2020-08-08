@@ -10,6 +10,18 @@
 * update the circle CI ([6b03c79](https://github.com/santhosh1994m/hello-world/commit/6b03c7930ff6fbc44f455bdfcabef3867e9c22dd))
 * update the file ([46446dc](https://github.com/santhosh1994m/hello-world/commit/46446dcca1ce1378a89839c4bbdcf4faf74b1c8b))
 
+## [0.1.63](https://github.com/santhosh1994m/hello-world/compare/v0.1.62...v0.1.63) (2020-08-08)
+
+
+### Bug Fixes
+
+* udpate the file ([45f2ede](https://github.com/santhosh1994m/hello-world/commit/45f2ede545fe3f30992559fde585c64a4dd1fac2))
+* udpate the file ([547c2d1](https://github.com/santhosh1994m/hello-world/commit/547c2d13a7bf20c79e98ab982faa3851f534c837))
+* udpate the file ([cbfe395](https://github.com/santhosh1994m/hello-world/commit/cbfe3958842fc8357edb8cc0b5c43d91ac458c27))
+* udpate the file ([38393e3](https://github.com/santhosh1994m/hello-world/commit/38393e3ae2d55e7ce4b4fe12841403edec64f8e3))
+* update the circle CI ([6b03c79](https://github.com/santhosh1994m/hello-world/commit/6b03c7930ff6fbc44f455bdfcabef3867e9c22dd))
+* update the file ([46446dc](https://github.com/santhosh1994m/hello-world/commit/46446dcca1ce1378a89839c4bbdcf4faf74b1c8b))
+
 # Changelog
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
