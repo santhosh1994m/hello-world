@@ -14,6 +14,12 @@ jobs:
                    DATENOW=`date +%d/%m/%Y-%H:%M:%S`
                    echo $DATENOW
       - run:
+          name: run a semantic version
+          command: |
+            OLDER_VERSION=$(node -p "require('./package.json').version")
+            echo "export OLDER_VERSION=$OLDER_VERSION" >> $BASH_ENV
+            npm run semantic-release || true                   
+      - run:
           name: install aws
           command: |
             curl "https://s3.amazonaws.com/aws-cli/awscli-bundle.zip" -o "awscli-bundle.zip"
