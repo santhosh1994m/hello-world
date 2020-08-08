@@ -8,6 +8,27 @@ jobs:
     working_directory: ~/hello-world
     steps:
       - checkout
+      - restore_cache:
+          name: Restore Yarn Package Cache
+          keys:
+            - yarn-packages-{{ checksum "yarn.lock" }}
+      - run:
+          name: Install dependencies
+          command: yarn install
+      - save_cache:
+          name: save cache
+          key: yarn-packages-{{ checksum "yarn.lock" }}
+          paths:
+            - ~/.cache/yarn
+      - run:
+          name: build common package for backend
+          command: yarn build
+      - run:
+          name: run a semantic version
+          command: |
+            OLDER_VERSION=$(node -p "require('./package.json').version")
+            echo "export OLDER_VERSION=$OLDER_VERSION" >> $BASH_ENV
+            npm run semantic-release || true
       - run:
           name: get the data
           command: |
