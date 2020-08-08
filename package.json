@@ -1,7 +1,7 @@
 {
   "name": "hello-world",
   "version": "1.0.0"
-  ],
+,
   "scripts": {
     "test": "lerna run --concurrency 4 --stream --no-bail test",
     "pre-commit": "lerna run --concurrency 1 --stream --no-bail precommit",
