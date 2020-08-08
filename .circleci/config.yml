@@ -11,7 +11,7 @@ jobs:
       - run: 
           name: install node and npm
           command: |
-                 sudo apt install nodejs
+                 sudo apt-get install nodejs
       - run:
           name: Install dependencies
           command: yarn install
