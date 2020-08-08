@@ -1,10 +1,10 @@
 orbs:
-  aws-ecr: circleci/aws-ecr@6.7.1
+    node: circleci/node@1.1.6
 version: 2.1 
 jobs:
   build-qa:
     docker:
-      - image: 'circleci/openjdk:8-jdk'
+      - image: "circleci/node:latest"
     working_directory: ~/hello-world
     steps:
       - checkout
